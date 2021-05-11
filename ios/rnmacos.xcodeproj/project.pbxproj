@@ -161,6 +161,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				B663B9A3990BB9AA080424F9 /* [CP] Copy Pods Resources */,
+				A897635238DFC1B7FBD239C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				3DD9D4E7335029B8E338CEE9 /* [CP] Copy Pods Resources */,
+				A387F95F5075F9ECA03C85BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +302,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnmacos/Pods-rnmacos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A387F95F5075F9ECA03C85BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnmacos/Pods-rnmacos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnmacos/Pods-rnmacos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnmacos/Pods-rnmacos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A897635238DFC1B7FBD239C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnmacos-rnmacosTests/Pods-rnmacos-rnmacosTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnmacos-rnmacosTests/Pods-rnmacos-rnmacosTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnmacos-rnmacosTests/Pods-rnmacos-rnmacosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B663B9A3990BB9AA080424F9 /* [CP] Copy Pods Resources */ = {
