@@ -1,9 +1,20 @@
-import {createSlice} from '@reduxjs/toolkit';
+import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
+
+import {fetchData} from '../../api/api';
+
+export const fetchCovidData = createAsyncThunk(
+  'counter/fetchCovidData',
+  async (userId, thunkAPI) => {
+    const response = await fetchData();
+    return response;
+  },
+);
 
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
     value: 0,
+    covidData: null,
   },
   reducers: {
     increment: state => {
@@ -18,6 +29,13 @@ export const counterSlice = createSlice({
     },
     incrementByAmount: (state, action) => {
       state.value += action.payload;
+    },
+  },
+  extraReducers: {
+    // Add reducers for additional action types here, and handle loading state as needed
+    [fetchCovidData.fulfilled]: (state, action) => {
+      // Add user to the state array
+      state.covidData = action.payload;
     },
   },
 });

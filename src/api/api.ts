@@ -8,9 +8,9 @@ const api = create({
 });
 
 export const fetchData = () => {
-  api
+  return api
     .get('/moxA3Q0aZh5LosewB/records/LATEST')
-    .then(response => console.log(response));
+    .then(response => response);
 };
 
 // api.post('/users', {name: 'steve'}, {headers: {'x-gigawatts': '1.21'}});
